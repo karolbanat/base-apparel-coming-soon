@@ -1,21 +1,39 @@
 $breakpoints: (
 	small: 38em,
-	medium: 50em,
+	medium: 48em,
 	large: 62em,
 );
 
-$colors: ();
-
-$font-sizes: (
-	small: (),
-	medium: (),
+$colors: (
+	primary: (
+		200: hsl(0 80% 86%),
+		300: hsl(0 74% 74%),
+		400: hsl(0 36% 70%),
+		700: hsl(0 93% 68%),
+	),
+	neutral: (
+		100: hsl(0 0% 100%),
+		200: hsl(0 100% 98%),
+		700: hsl(0 6% 24%),
+	),
 );
 
-$font-weights: ();
+$font-sizes: (
+	small: (
+		400: 1.6rem,
+		700: 3.2rem,
+	),
+	medium: (
+		700: 5rem,
+	),
+);
 
-$border-radius: ();
+$font-weights: (
+	300: 300,
+	400: 400,
+	700: 600,
+);
 
-$spacings: (
-	em: (),
-	rem: (),
+$border-radius: (
+	900: 100vmax,
 );
