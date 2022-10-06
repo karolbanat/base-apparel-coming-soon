@@ -16,12 +16,27 @@
 
 <body>
 
-  We're coming soon
+  <main class="main-grid">
+    <nav class="navigation" data-area="nav"><a aria-label="Base apparel home page" href="#"><img
+             src="./dist/images/logo.svg" alt=""></a></nav>
+    <picture data-area="image">
+      <source media="(min-width: 768px)" srcset="./dist/images/hero-desktop.jpg">
+      <img src="./dist/images/hero-mobile.jpg" alt="Woman with orange shirt on, posing to the camera.">
+    </picture>
+    <article class="coming-soon" data-area="content">
+      <h1 class="coming-soon__heading">We're <strong>coming soon</strong></h1>
+      <p>Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <form class="email-form">
+        <input aria-label="Email address" type="email" name="email" id="email" placeholder="Email Address"
+               class="email-from__input" required>
+        <button aria-label="Submit email" type="submit">
+          <img src="./dist/images/icon-arrow.svg" alt="" class="email-form__submit-btn">
+        </button>
+      </form>
+    </article>
+  </main>
 
-  Hello fellow shoppers! We're currently building our new fashion store.
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
 </body>
 
 </html>
