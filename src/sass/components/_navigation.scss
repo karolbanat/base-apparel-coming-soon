@@ -1,0 +1,8 @@
+@use '../abstracts/mixins' as mxn;
+
+.navigation {
+	padding-block: 3.2rem;
+	@include mxn.mq(medium) {
+		padding-block: 6.4rem;
+	}
+}

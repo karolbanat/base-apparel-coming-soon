@@ -1,0 +1,32 @@
+@use '../abstracts/mixins' as mxn;
+
+.coming-soon {
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
+	padding-block: 6.4rem;
+	max-width: 50rem;
+	margin-inline: auto;
+	text-align: center;
+	color: var(--clr-primary-400);
+	@include mxn.mq(medium) {
+		gap: 3.6rem;
+		max-width: unset;
+		text-align: start;
+	}
+
+	&__heading {
+		font-weight: var(--fw-300);
+		text-transform: uppercase;
+		letter-spacing: 10px;
+		line-height: 1.1;
+		@include mxn.mq(medium) {
+			letter-spacing: 16px;
+		}
+
+		strong {
+			font-weight: var(--fw-700);
+			color: var(--clr-neutral-700);
+		}
+	}
+}

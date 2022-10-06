@@ -1,0 +1,27 @@
+@use '../abstracts/mixins' as mxn;
+
+.main-grid {
+	display: grid;
+	min-height: 100vh;
+	grid-template-areas:
+		'nav'
+		'image'
+		'content';
+	@include mxn.mq(medium) {
+		grid-template-areas:
+			'nav image'
+			'content image';
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: min-content;
+	}
+
+	& [data-area='nav'] {
+		grid-area: nav;
+	}
+	& [data-area='image'] {
+		grid-area: image;
+	}
+	& [data-area='content'] {
+		grid-area: content;
+	}
+}

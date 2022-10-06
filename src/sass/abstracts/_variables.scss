@@ -1,7 +1,8 @@
 $breakpoints: (
 	small: 38em,
-	medium: 48em,
-	large: 62em,
+	medium: 52.5em,
+	large: 69.375em,
+	xlarge: 75em,
 );
 
 $colors: (
@@ -20,11 +21,12 @@ $colors: (
 
 $font-sizes: (
 	small: (
-		400: 1.6rem,
-		700: 3.2rem,
+		400: 1.4rem,
+		700: 4rem,
 	),
 	medium: (
-		700: 5rem,
+		400: 1.6rem,
+		700: 6.4rem,
 	),
 );
 

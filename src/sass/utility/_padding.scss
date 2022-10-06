@@ -1,0 +1,8 @@
+@use '../abstracts/mixins' as mxn;
+
+.padding-inline-container {
+	padding-inline: clamp(3.2rem, 5vw, 8rem);
+	@include mxn.mq(xlarge) {
+		padding-inline: 0 11rem;
+	}
+}

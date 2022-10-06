@@ -1,0 +1,49 @@
+@use '../abstracts/mixins' as mxn;
+
+.email-form {
+	position: relative;
+	display: flex;
+
+	&__input {
+		flex: 1;
+		padding-inline-start: 1.5em;
+		padding-inline-end: 10rem;
+		padding-block: 1em;
+		color: var(--clr-neutral-700);
+		border: none;
+		background-color: transparent;
+		border-radius: var(--borr-900);
+		border: 1px solid var(--clr-primary-400);
+		@include mxn.mq(medium) {
+			padding-inline-end: 12.5rem;
+		}
+
+		&::placeholder {
+			color: var(--clr-primary-400);
+		}
+	}
+
+	&__submit-btn {
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100%;
+		padding: 1em 2em;
+		background: none;
+		border: none;
+		background-image: linear-gradient(135deg, var(--clr-primary-200), var(--clr-primary-300));
+		border-radius: var(--borr-900);
+		box-shadow: 0 0.8rem 1rem var(--clr-primary-200);
+		transition: opacity 0.4s ease, box-shadow 0.4s ease;
+		cursor: pointer;
+		@include mxn.mq(medium) {
+			padding-inline: 2.75em;
+		}
+
+		&:hover,
+		&:focus-visible {
+			opacity: 0.6;
+			box-shadow: 0 0.8rem 2rem var(--clr-primary-400);
+		}
+	}
+}
