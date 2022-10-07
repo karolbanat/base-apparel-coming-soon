@@ -8,7 +8,10 @@ const EMAIL_REGEX =
 submitBtn.addEventListener('click', e => {
 	e.preventDefault();
 	const emailValue = emailInput.value;
-	if (!EMAIL_REGEX.test(emailValue)) {
+	if (emailValue === '') {
+		emailInput.classList.add('error');
+		formMessage.innerText = 'Cannot be empty';
+	} else if (!EMAIL_REGEX.test(emailValue)) {
 		emailInput.classList.add('error');
 		formMessage.innerText = 'Please provide a valid email';
 	} else {
