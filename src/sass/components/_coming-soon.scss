@@ -13,6 +13,7 @@
 		gap: 3.6rem;
 		max-width: unset;
 		text-align: start;
+		padding-block: clamp(6.4rem, -8rem + 10vw, 10rem);
 	}
 
 	&__heading {
