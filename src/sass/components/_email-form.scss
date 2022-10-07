@@ -18,9 +18,26 @@
 			padding-inline-end: 12.5rem;
 		}
 
+		&.error {
+			outline: 1px solid var(--clr-primary-700);
+		}
+
 		&::placeholder {
 			color: var(--clr-primary-400);
 		}
+	}
+
+	&__input.error + &__message {
+		display: block;
+	}
+
+	&__message {
+		display: none;
+		position: absolute;
+		bottom: -0.3em;
+		left: 1.5em;
+		translate: 0 100%;
+		color: var(--clr-primary-700);
 	}
 
 	&__submit-btn {
