@@ -4,8 +4,8 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 ## Links
 
-- Solution URL: [Frontend Mentor Solution Page](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages Site](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-z_TMagqFup)
+- Live Site URL: [GitHub Pages Site](https://karolbanat.github.io/base-apparel-coming-soon/)
 
 ## Author
 
